@@ -1,0 +1,30 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int cv,ch,dv,iv,a,b,i;
+    for(i=0;i<10;i++)
+    {
+    cout<<"Enter the current volume"<<endl;
+    cin>>cv;
+    cout<<"Do you want to decrease or increase?"<<endl;
+    cout<<"Enter 1 for increase 2 for decrease"<<endl;
+    cin>>ch;
+    switch(ch)
+    {
+        case 1:cout<<"increased value";
+        cin>>iv;
+        a=iv-cv;
+        cout<<"increased by"<<a;
+        break;
+        case 2:cout<<"decreased value";
+        cin>>dv;
+        b=cv-dv;
+         cout<<"decreased by"<<b;
+         break;
+         default:cout<<"invalid choice";
+        
+    }
+}
+    return 0;
+}
